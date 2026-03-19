@@ -80,7 +80,7 @@ The system includes governance-oriented components:
 - Audit logging of predictions
 - Monitoring for unusual model behavior
 
-,## Dataset
+## Dataset
 
 The project uses the **German Credit dataset**, a benchmark dataset widely used in financial risk modeling.
 
