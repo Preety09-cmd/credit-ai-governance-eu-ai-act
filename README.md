@@ -27,7 +27,7 @@ This architecture ensures that AI decisions are not only accurate but also expla
 ![SHAP Local](outputs/shap_local_explanation.png)
 
 ### LIME Local Explanation
-![LIME Explanation](outputs/lime_screenshot.png)
+![LIME Explanation](outputs/lime_explanation.png)
 
 ---
 
