@@ -180,3 +180,27 @@ credit-ai-governance/
 ├── credit_ai_governance_demo.ipynb
 ├── .gitignore
 └── README.md
+
+## Installation
+
+Install dependencies:
+
+pip3 install -r requirements.txt
+
+---
+
+## Run the Project
+
+Run the full pipeline:
+
+python3 prepare_data.py
+python3 main.py
+
+---
+
+## Key Insights
+
+- Random Forest achieved better predictive performance  
+- Explainability is essential for black-box models  
+- Governance enables transparency and compliance  
+- Monitoring helps detect anomalies and risks  
