@@ -1,0 +1,123 @@
+# Explainable AI Governance for Credit Risk (EU AI Act Perspective)
+
+## Overview
+
+This project demonstrates a practical **AI governance prototype for credit risk assessment** in financial services. It integrates machine learning, explainable AI (XAI), auditability, and monitoring to simulate how AI-driven decisions can be made transparent and compliant with regulatory expectations such as the **EU AI Act**.
+
+The project goes beyond model development by incorporating governance mechanisms that support **transparency, accountability, and traceability** in AI systems.
+
+---
+
+## Architecture
+
+The system follows a governance-driven pipeline:
+
+**Customer Data → Data Governance → AI Model → Explainability → Governance Review → Audit → Monitoring → Decision**
+
+This architecture ensures that AI decisions are not only accurate but also explainable and auditable.
+
+---
+
+## Explainability Outputs
+
+### SHAP Global Feature Importance
+![SHAP Summary](outputs/shap_summary.png)
+
+### SHAP Local Explanation
+![SHAP Local](outputs/shap_local_explanation.png)
+
+---
+
+## Objectives
+
+This project demonstrates how to:
+
+- Build AI models for credit risk prediction
+- Compare interpretable and black-box models
+- Apply SHAP and LIME for model explainability
+- Enable governance through performance evaluation
+- Maintain audit logs for traceability
+- Monitor model behavior for anomalies
+
+---
+
+## Machine Learning Models
+
+### Logistic Regression
+- Interpretable baseline model  
+- Provides transparency through model coefficients  
+
+### Random Forest
+- Higher predictive performance  
+- Black-box model requiring explainability  
+
+---
+
+## Explainable AI Techniques
+
+### SHAP (SHapley Additive Explanations)
+- Explains feature contributions globally and locally  
+- Helps validate model behavior  
+
+### LIME (Local Interpretable Model-Agnostic Explanations)
+- Explains individual predictions  
+- Useful for case-level analysis  
+
+---
+
+## Governance Features
+
+The system includes governance-oriented components:
+
+- Data quality checks (missing values, duplicates)
+- Model performance comparison
+- Governance report for review
+- Audit logging of predictions
+- Monitoring for unusual model behavior
+
+---
+
+## Dataset
+
+The project uses the **German Credit dataset**, a benchmark dataset widely used in financial risk modeling.
+
+Target variable:
+
+- `0` → Low risk  
+- `1` → High risk (default)
+
+---
+
+## Project Structure
+
+```text
+credit-ai-governance/
+│
+├── data/
+│   ├── german.data
+│   ├── german.data-numeric
+│   └── german_credit.csv
+│
+├── outputs/
+│   ├── shap_summary.png
+│   ├── shap_local_explanation.png
+│   ├── model_metrics.csv
+│   ├── lime_explanation.html
+│   ├── governance_report.txt
+│   ├── audit_log.csv
+│   └── monitoring_alerts.txt
+│
+├── src/
+│   ├── preprocess.py
+│   ├── train_models.py
+│   ├── explain_shap.py
+│   ├── explain_lime.py
+│   ├── governance_checks.py
+│   ├── audit_log.py
+│   └── monitor.py
+│
+├── prepare_data.py
+├── main.py
+├── requirements.txt
+├── credit_ai_governance_demo.ipynb
+└── README.md
