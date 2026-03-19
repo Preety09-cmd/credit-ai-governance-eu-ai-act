@@ -6,8 +6,6 @@ This project demonstrates a practical **AI governance prototype for credit risk 
 
 The project goes beyond model development by incorporating governance mechanisms that support **transparency, accountability, and traceability** in AI systems.
 
----
-
 ## AI Governance Architecture
 
 The following architecture illustrates how AI-driven credit risk systems can be designed to meet governance, explainability, and auditability requirements.
@@ -19,8 +17,6 @@ The system follows a governance-driven pipeline:
 **Customer Data → Data Governance → AI Model → Explainability → Governance Review → Audit → Monitoring → Decision**
 
 This architecture ensures that AI decisions are not only accurate but also explainable and auditable.
-
----
 
 ## Project Demo
 
@@ -43,8 +39,6 @@ Below are example outputs from the system:
 ### LIME Local Explanation
 ![LIME Explanation](outputs/lime_explanation.png)
 
----
-
 ## Objectives
 
 This project demonstrates how to:
@@ -56,8 +50,6 @@ This project demonstrates how to:
 - Maintain audit logs for traceability
 - Monitor model behavior for anomalies
 
----
-
 ## Machine Learning Models
 
 ### Logistic Regression
@@ -67,8 +59,6 @@ This project demonstrates how to:
 ### Random Forest
 - Higher predictive performance  
 - Black-box model requiring explainability  
-
----
 
 ## Explainable AI Techniques
 
@@ -80,8 +70,6 @@ This project demonstrates how to:
 - Explains individual predictions  
 - Useful for case-level analysis  
 
----
-
 ## Governance Features
 
 The system includes governance-oriented components:
@@ -92,9 +80,7 @@ The system includes governance-oriented components:
 - Audit logging of predictions
 - Monitoring for unusual model behavior
 
----
-
-## Dataset
+,## Dataset
 
 The project uses the **German Credit dataset**, a benchmark dataset widely used in financial risk modeling.
 
@@ -103,8 +89,9 @@ Target variable:
 - `0` → Low risk  
 - `1` → High risk (default)
 
----
+## Project Structure
 
+```text
 ## Project Structure
 
 ```text
@@ -118,8 +105,10 @@ credit-ai-governance/
 ├── outputs/
 │   ├── shap_summary.png
 │   ├── shap_local_explanation.png
-│   ├── model_metrics.csv
 │   ├── lime_explanation.html
+│   ├── lime_screenshot.png
+│   ├── ai_governance_architecture.png
+│   ├── model_metrics.csv
 │   ├── governance_report.txt
 │   ├── audit_log.csv
 │   └── monitoring_alerts.txt
@@ -137,4 +126,5 @@ credit-ai-governance/
 ├── main.py
 ├── requirements.txt
 ├── credit_ai_governance_demo.ipynb
+├── .gitignore
 └── README.md
