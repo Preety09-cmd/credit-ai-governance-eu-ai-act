@@ -28,7 +28,7 @@ This project demonstrates:
 
 Below are example outputs from the system:
 
-## Example Outputs
+## Explainability Outputs
 
 ### SHAP Global Feature Importance
 ![SHAP Summary](outputs/shap_summary.png)
@@ -38,6 +38,58 @@ Below are example outputs from the system:
 
 ### LIME Local Explanation
 ![LIME Explanation](outputs/lime_explanation.png)
+
+## Decision Explanation: Loan Approval / Rejection
+
+This project simulates how a bank can make and justify AI-driven credit decisions.
+
+### Example Scenario
+
+A customer applies for a loan. The AI system processes the applicant’s financial data and predicts the credit risk:
+
+- `0` → Low Risk (Loan Approved)
+- `1` → High Risk (Loan Rejected)
+
+### Model Decision
+
+The Random Forest model evaluates the customer’s financial profile and predicts the probability of default.
+
+Example:
+
+- Predicted Risk: **High Risk**
+- Decision: **Loan Rejected**
+
+### Explainability (Why the decision was made)
+
+Using SHAP and LIME, the system explains the decision:
+
+- Certain features increase risk (e.g., high credit amount, long duration)
+- Other features may reduce risk
+
+These explanations provide transparency into how the model reached its decision.
+
+### Customer Perspective
+
+The bank can communicate:
+
+> “Your loan application was declined due to factors such as high credit exposure and repayment risk indicators identified by the model.”
+
+### Auditor / Regulator Perspective
+
+The system supports auditability through:
+
+- SHAP explanations showing feature contributions
+- LIME explanations for individual decisions
+- Audit logs containing prediction details and timestamps
+- Governance reports documenting model performance and behavior
+
+This ensures that decisions are:
+
+- Transparent  
+- Explainable  
+- Traceable  
+
+and aligned with regulatory expectations such as the EU AI Act.
 
 ## Objectives
 
