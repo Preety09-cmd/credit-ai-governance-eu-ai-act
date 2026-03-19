@@ -194,7 +194,7 @@ Run the full pipeline:
 ```bash
 python3 prepare_data.py
 python3 main.py
-``
+```
 
 ## Key Insights
 
