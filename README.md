@@ -8,7 +8,11 @@ The project goes beyond model development by incorporating governance mechanisms
 
 ---
 
-## Architecture
+## AI Governance Architecture
+
+The following architecture illustrates how AI-driven credit risk systems can be designed to meet governance, explainability, and auditability requirements.
+
+![AI Governance Architecture](outputs/ai_governance_architecture.png)
 
 The system follows a governance-driven pipeline:
 
@@ -18,7 +22,17 @@ This architecture ensures that AI decisions are not only accurate but also expla
 
 ---
 
-## Explainability Outputs
+## Project Demo
+
+This project demonstrates:
+
+- AI-driven credit risk prediction  
+- Explainable AI using SHAP and LIME  
+- Governance workflow including audit logging and monitoring  
+
+Below are example outputs from the system:
+
+## Example Outputs
 
 ### SHAP Global Feature Importance
 ![SHAP Summary](outputs/shap_summary.png)
