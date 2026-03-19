@@ -143,6 +143,7 @@ Target variable:
 
 ## Project Structure
 
+```
 credit-ai-governance/
 │
 ├── data/
@@ -154,7 +155,7 @@ credit-ai-governance/
 │   ├── shap_summary.png
 │   ├── shap_local_explanation.png
 │   ├── lime_explanation.html
-│   ├── lime_screenshot.png
+│   ├── lime_explanation.png
 │   ├── ai_governance_architecture.png
 │   ├── model_metrics.csv
 │   ├── governance_report.txt
@@ -176,17 +177,20 @@ credit-ai-governance/
 ├── credit_ai_governance_demo.ipynb
 ├── .gitignore
 └── README.md
+```
 
 ## Installation
 
 Install dependencies:
 
+```bash
 pip3 install -r requirements.txt
 
 ## Run the Project
 
 Run the full pipeline:
 
+```bash
 python3 prepare_data.py
 python3 main.py
 
@@ -227,4 +231,4 @@ This project demonstrates:
 
 ## Author
 
-Developed as part of research in AI governance, explainable AI, and cybersecurity in financial systems.
+Developed as part of research in **AI governance, explainable AI, and cybersecurity in financial systems**.
