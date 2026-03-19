@@ -143,10 +143,7 @@ Target variable:
 
 ## Project Structure
 
-```text
-## Project Structure
-
-```text
+```text   
 credit-ai-governance/
 │
 ├── data/
@@ -180,14 +177,13 @@ credit-ai-governance/
 ├── credit_ai_governance_demo.ipynb
 ├── .gitignore
 └── README.md
+```text
 
 ## Installation
 
 Install dependencies:
 
 pip3 install -r requirements.txt
-
----
 
 ## Run the Project
 
@@ -196,11 +192,41 @@ Run the full pipeline:
 python3 prepare_data.py
 python3 main.py
 
----
-
 ## Key Insights
 
 - Random Forest achieved better predictive performance  
 - Explainability is essential for black-box models  
 - Governance enables transparency and compliance  
 - Monitoring helps detect anomalies and risks  
+
+## Why This Project Matters
+
+As AI adoption grows in financial services, systems must be:
+
+- Transparent
+- Explainable
+- Auditable
+- Secure
+
+This project demonstrates how these principles can be implemented in practice.
+
+## Interview Relevance
+
+This project demonstrates:
+
+- AI model development
+- Explainable AI implementation
+- Governance and auditability design
+- Real-world financial AI application
+
+## Future Improvements
+
+- Bias and fairness analysis
+- Model drift detection
+- Real-time monitoring dashboard
+- Web deployment (Streamlit)
+- Integration with NIST / ISO frameworks
+
+## Author
+
+Developed as part of research in AI governance, explainable AI, and cybersecurity in financial systems.
