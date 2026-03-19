@@ -185,6 +185,7 @@ Install dependencies:
 
 ```bash
 pip3 install -r requirements.txt
+```
 
 ## Run the Project
 
@@ -193,6 +194,7 @@ Run the full pipeline:
 ```bash
 python3 prepare_data.py
 python3 main.py
+``
 
 ## Key Insights
 
