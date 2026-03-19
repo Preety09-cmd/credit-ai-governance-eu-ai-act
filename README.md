@@ -143,7 +143,6 @@ Target variable:
 
 ## Project Structure
 
-```text   
 credit-ai-governance/
 │
 ├── data/
@@ -177,7 +176,6 @@ credit-ai-governance/
 ├── credit_ai_governance_demo.ipynb
 ├── .gitignore
 └── README.md
-```text
 
 ## Installation
 
