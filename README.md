@@ -214,7 +214,7 @@ As AI adoption grows in financial services, systems must be:
 
 This project demonstrates how these principles can be implemented in practice.
 
-## Interview Relevance
+## Relevance
 
 This project demonstrates:
 
