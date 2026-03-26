@@ -39,6 +39,12 @@ Below are example outputs from the system:
 ### LIME Local Explanation
 ![LIME Explanation](outputs/lime_explanation.png)
 
+### Confusion Matrix
+![Confusion Matrix](outputs/confusion_matrix.png)
+
+The confusion matrix shows how well the model classified low-risk and high-risk applicants across both classes.
+The model also achieved strong performance across accuracy, precision, recall, F1-score, and ROC-AUC.
+
 ## Decision Explanation: Loan Approval / Rejection
 
 This project simulates how a bank can make and justify AI-driven credit decisions.

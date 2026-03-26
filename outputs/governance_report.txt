@@ -33,7 +33,7 @@ dtype: int64
 2. Model Performance Comparison
 -------------------------------
               model  accuracy  precision   recall  f1_score  roc_auc
-Logistic Regression      0.77   0.666667 0.466667  0.549020 0.816071
+Logistic Regression      0.77   0.666667 0.466667  0.549020 0.816310
       Random Forest      0.79   0.764706 0.433333  0.553191 0.794762
 
 3. Governance Notes
