@@ -28,6 +28,23 @@ def evaluate_model(name, model, X_test, y_test):
     }
 
 
+def save_confusion_matrix(model, X_test, y_test, output_path="outputs/confusion_matrix.png"):
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+    y_pred = model.predict(X_test)
+    cm = confusion_matrix(y_test, y_pred)
+
+    disp = ConfusionMatrixDisplay(
+        confusion_matrix=cm,
+        display_labels=["Low Risk", "High Risk"]
+    )
+    disp.plot(cmap="Blues")
+
+    plt.title("Random Forest Confusion Matrix")
+    plt.savefig(output_path, bbox_inches="tight")
+    plt.close()
+
+
 def train_models(X_train, y_train, X_test, y_test):
     lr = LogisticRegression(max_iter=1000, random_state=42)
     rf = RandomForestClassifier(
@@ -76,5 +93,8 @@ def train_models(X_train, y_train, X_test, y_test):
         evaluate_model("Logistic Regression", lr, X_test, y_test),
         evaluate_model("Random Forest", rf, X_test, y_test),
     ])
+
+    # Save confusion matrix for Random Forest
+    save_confusion_matrix(rf, X_test, y_test)	
 
     return lr, rf, metrics
